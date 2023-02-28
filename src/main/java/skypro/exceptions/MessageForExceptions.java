@@ -14,4 +14,4 @@ public class MessageForExceptions {
     public void setMessage(String message) {
         this.message = message;
     }
-}
+} //

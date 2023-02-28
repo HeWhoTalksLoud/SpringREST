@@ -17,6 +17,7 @@ public class Employee {
     @Column(name = "salary")
     private float salary;
 
+
     public Employee() {}
 
     public Employee(int id, String first_name, int department, float salary) {
