@@ -60,5 +60,4 @@ public class ConfigNew {
 
         return transactionManager;
     }
-
 }

@@ -1,5 +1,6 @@
 package skypro.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import skypro.entity.Employee;
 import skypro.service.EmployeeService;
@@ -12,7 +13,7 @@ public class RestControllerNew {
 
     private EmployeeService employeeService;
 
-    public RestControllerNew() {}
+    @Autowired
     public RestControllerNew(EmployeeService employeeService) {
         this.employeeService = employeeService;
     }

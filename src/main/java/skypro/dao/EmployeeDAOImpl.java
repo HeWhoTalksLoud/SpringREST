@@ -1,6 +1,6 @@
 package skypro.dao;
 
-import jakarta.persistence.Query;
+import javax.persistence.*;
 import org.hibernate.Session;
 import org.springframework.stereotype.Repository;
 import org.hibernate.SessionFactory;
