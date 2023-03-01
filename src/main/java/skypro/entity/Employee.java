@@ -1,21 +1,23 @@
 package skypro.entity;
 
-import jakarta.persistence.*;
+
+import javax.persistence.*;
 
 
 @Entity
-@Table(name = "person")
+@Table(name = "employees")
 public class Employee {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
-    private int id;
+    private Integer id;
     @Column(name = "first_name")
     private String first_name;
     @Column(name = "department")
-    private int department;
+    private Integer department;
     @Column(name = "salary")
-    private float salary;
+    private Float salary;
+
 
     public Employee() {}
 
@@ -26,11 +28,11 @@ public class Employee {
         this.salary = salary;
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -42,19 +44,19 @@ public class Employee {
         this.first_name = first_name;
     }
 
-    public int getDepartment() {
+    public Integer getDepartment() {
         return department;
     }
 
-    public void setDepartment(int department) {
+    public void setDepartment(Integer department) {
         this.department = department;
     }
 
-    public float getSalary() {
+    public Float getSalary() {
         return salary;
     }
 
-    public void setSalary(float salary) {
+    public void setSalary(Float salary) {
         this.salary = salary;
     }
 }
